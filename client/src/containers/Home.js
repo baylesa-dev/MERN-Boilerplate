@@ -9,7 +9,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <p>M.E.R.N.  - Hello REDUX</p>
+                <p>M.E.R.N. Boilerplate - Hello REDUX</p>
                 {!this.props.auth.isLoggedIn ?
                     <button onClick={() => {
                         this.props.login({ username: 'username', password: 'password' })}}>
