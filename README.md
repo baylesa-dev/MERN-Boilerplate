@@ -1,9 +1,8 @@
 # M.E.R.N. Boilerplate
 
-![logoMERN](https://raw.githubusercontent.com/baylesa-Taker/MERN-boilerplate/master/.readme/images/mern.png
-)
+![logoMERN](https://raw.githubusercontent.com/baylesa-Taker/MERN-Boilerplate/master/.readme/images/mern.png)
 
-#### React nicely featured (Babel, Webpack, Redux) App, with Node/Express Backend, and Mongo Database
+#### React nicely featured (Babel, Webpack, Redux) App, with Node/Express Backend, and Mongo Database all within Docker's container
 
 ## Technologies
 
@@ -23,4 +22,7 @@
     > <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2000px-Node.js_logo_2015.svg.png' height="40">
     >
     >*Designed to build scalable network applications*
-
+* [**Docker**](https://www.docker.com/) Enterprise Container Platform
+    > <img  src='https://www.docker.com/sites/default/files/mono-horizontal.png' height="40">
+    >
+    >*Protect your legacy, invest in your future*
