@@ -2,7 +2,7 @@
     MERN Boilerplate
     <br>
     <br>
-    <img width=100% src="assets/images/mern-banner.png">
+    <img width=100% src="docs/images/mern-banner.png">
 </h1>
 
 <p align="center">
