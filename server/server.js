@@ -2,7 +2,6 @@ const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
-const port = 8080
 
 /*
 ** MongoDB initialization
@@ -26,6 +25,7 @@ const connectWithRetry = () => {
 */
 
 const app = express();
+const port = process.env.PORT || 8080
 
 app.use(cors())
 app.use(bodyParser.json())
