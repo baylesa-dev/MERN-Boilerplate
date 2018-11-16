@@ -4,7 +4,7 @@
   "description": "MERN Boilerplate Client",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback --env.PLATFORM=local --env.VERSION=stag --host 0.0.0.0 --port 3000"
+    "start": "webpack-dev-server --watch --mode development --config config/webpack.base.config.js --hot --progress --color --history-api-fallback --env.PLATFORM=local --env.VERSION=stag --host 0.0.0.0 --port 3000"
   },
   "repository": {
     "type": "git",
