@@ -9,7 +9,8 @@
 
     **Install *docker* and *docker-compose***
 
-    Due to the large number of available platforms I would refer you to the clear, clean and well explained Docker website. :point_down: Follow the links above :point_down:
+    Due to the large number of available platforms I would refer you to the clear, clean and well explained Docker website. 
+    :point_down: Follow the links above :point_down:
  
     |[<img src="https://www.docker.com/sites/default/files/mono-vertical.png" height="100">](https://docs.docker.com/install/) | [**Install Docker**](https://docs.docker.com/install/)|
     -----------------------------------|-------------------------------------------------------
