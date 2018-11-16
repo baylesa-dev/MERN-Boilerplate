@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Back-end of MERN Boilerplate",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baylesa-Taker/MERN-Boilerplate.git"
+  },
+  "keywords": [
+    "Express",
+    "Mongo",
+    "React",
+    "Node"
+  ],
+  "author": "Adrien Bayles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baylesa-Taker/MERN-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/baylesa-Taker/MERN-Boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.12"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.6"
+  }
+}
