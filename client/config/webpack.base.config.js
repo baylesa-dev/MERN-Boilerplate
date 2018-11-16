@@ -5,12 +5,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
-const APP_DIR = path.resolve(__dirname, '../src')
+const APP_DIR = path.resolve(__dirname, '../src/index.js')
+const sourcePath = path.join(__dirname, '../src')
 
 module.exports = env => {
     const { PLATFORM, VERSION } = env
     return merge([
         {
+            context: sourcePath,
             entry: ['@babel/polyfill', APP_DIR],
             module: {
                 rules: [
@@ -35,11 +37,12 @@ module.exports = env => {
                 ]
             },
             plugins: [
-                new CopyWebpackPlugin([ { from: 'src/static' } ]),
+                new CopyWebpackPlugin([
+                    { from: './index.html' }
+                ]),
                 new webpack.HotModuleReplacementPlugin(),
                 new HtmlWebpackPlugin({
-                    template: 'src/index.html',
-                    filename: './index.html'
+                    template: 'index.html',
                 }),
                 new webpack.DefinePlugin({
                     'process.env.VERSION': JSON.stringify(env.VERSION),
@@ -47,9 +50,15 @@ module.exports = env => {
                 }),
             ],
             devServer: {
+                contentBase: sourcePath,
+                hot: true,
                 proxy: {
                   '/api': 'http://server:8080'
                 }
+            },
+            watchOptions: {
+                aggregateTimeout: 300,
+                poll: 1000
             }
         }
     ])
