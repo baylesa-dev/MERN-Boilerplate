@@ -1,6 +1,10 @@
 version: '3'
 
 services:
+  mongodb:
+    image: "mongo"
+    ports:
+      - ${MONGO_PORT}:${MONGO_PORT}
   server:
     build: ./server
     expose:
@@ -12,6 +16,10 @@ services:
       - ${APP_SERVER_PORT}:${APP_SERVER_PORT}
     volumes:
       - ./server:/usr/src/app/server
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
     command: npm run start:dev
   client:
     build: ./client
