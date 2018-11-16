@@ -1,4 +1,7 @@
-# M.E.R.N. Boilerplate
+<p align="center">
+<h1>MERN Boilerplate</h1>
+<img width=100% src="assets/images/mern-banner.png">
+</p>
 
 ![logoMERN](https://raw.githubusercontent.com/baylesa-Taker/MERN-Boilerplate/master/.readme/images/mern.png)
 
