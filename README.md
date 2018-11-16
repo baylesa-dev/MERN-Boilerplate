@@ -4,6 +4,26 @@
 
 #### React nicely featured (Babel, Webpack, Redux) App, with Node/Express Backend, and Mongo Database all within Docker's container
 
+## Installation
+* ### Prerequisites
+
+    **Install *docker* and *docker-compose***
+
+    Due to the large number of available platforms I would refer you to the clear, clean and well explained Docker website. Follow the links above :point_down:
+    [<img src="https://www.docker.com/sites/default/files/mono-vertical.png" height="100">](https://docs.docker.com/install/) | [**Install Docker**](https://docs.docker.com/install/)
+    -----------------------------------|-------------------------------------------------------
+
+## Usage
+* ### Build Docker's containers
+    ```bash
+    $ docker-compose build
+    ```
+* ### Launch Docker's containers
+    ```bash
+    $ docker-compose up
+    ```
+And that's it, you can code :thumbsup: :tada:
+
 ## Technologies
 
 * [**MongoDB**](https://www.mongodb.com/) Open Source Document Database 
