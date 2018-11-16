@@ -1,21 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react'
+import { Provider } from 'react-redux'
+import { ConnectedRouter } from 'connected-react-router'
+import { createBrowserHistory } from 'history'
 
-class App extends React.Component {
-  handleClickButton = async () => {
-    const response = await fetch('/api/hello');
-    const body = await response.json();
-    if (response.status !== 200) throw Error(body.message);
-    console.log(body)
-  }
+import configureStore from '../store/configureStore'
 
-  render() {
-    return (
-      <div>
-        <h1>MERN Boilerplate</h1>
-        <button onClick={() => this.handleClickButton()}>BUTTON</button>
-      </div>
-    )
-  }
+import Router from '../components/Router'
+
+class App extends Component {
+    constructor(props) {
+        super(props)
+
+        this.history = createBrowserHistory()
+        this.store = configureStore(this.history)
+    }
+    render() {
+        return (
+            <Provider store={this.store}>
+                <ConnectedRouter history={this.history}>
+                    <Router/>
+                </ConnectedRouter>
+            </Provider>
+        )
+    }
 }
 
 export default App

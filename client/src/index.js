@@ -3,9 +3,21 @@ import ReactDOM from 'react-dom'
 
 import App from './containers/App'
 
-ReactDOM.render(
-    <App/>,
-    document.getElementById('root')
-);
+const render = () => {
+    ReactDOM.render(
+        <App/>,
+        document.getElementById('root')
+    )
+}
 
-module.hot.accept()
+render()
+
+if (module.hot) {
+    module.hot.accept('./containers/App', () => {
+      render()
+    })
+
+    module.hot.accept('./reducers', () => {
+      store.replaceReducer(rootReducer(history))
+    })
+}
