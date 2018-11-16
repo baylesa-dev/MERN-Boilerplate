@@ -22,7 +22,7 @@ services:
       - mongodb
     command: npm run start:dev
   client:
-    build: ./client
+    build: ./client/
     environment:
       - REACT_APP_PORT=${REACT_APP_PORT}
     expose:
@@ -30,7 +30,8 @@ services:
     ports:
       - ${REACT_APP_PORT}:${REACT_APP_PORT}
     volumes:
-      - ./client/:/usr/src/app/client
+      - ./client/:/usr/src/app/client:rw
+      - /usr/src/app/client/node_modules
     links:
       - server
     command: npm run start

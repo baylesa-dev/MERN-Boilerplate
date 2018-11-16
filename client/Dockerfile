@@ -9,6 +9,5 @@ COPY package*.json /usr/src/app/client/
 RUN npm install --silent
 
 COPY . /src/app/client
-WORKDIR /src/app/client
 
 CMD [ "npm", "start" ]
