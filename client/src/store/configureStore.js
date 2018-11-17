@@ -8,10 +8,11 @@ import createRootReducer from '../reducers/'
 export default function configureStore(history) {
 
     const loggerMiddleware = createLogger()
+    const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
     const store = createStore(
         createRootReducer(history),
-        compose(
+        composeEnhancer(
             applyMiddleware(
                 routerMiddleware(history),
                 thunkMiddleware,

@@ -1,0 +1,30 @@
+.navbar-container {
+    display: flex;
+    padding: 16px;
+    background-color: map-get($bg-color, primary);
+}
+
+.navbar-items {
+    display: flex
+}
+
+.navbar-items--right {
+    margin-left: auto
+}
+
+.brand-container {
+    font-family: $raleway;
+    color: map-get($font-color, secondary)
+}
+
+.link-container {
+    display: flex;
+    padding-right: 8px;
+    align-items: center;
+    font-family: $raleway;
+    color: map-get($font-color, primary)
+}
+
+.icon {
+    color: map-get($font-color, secondary)
+}

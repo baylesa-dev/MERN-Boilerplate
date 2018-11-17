@@ -5,7 +5,9 @@ import { Provider } from 'react-redux'
 import { createBrowserHistory } from 'history'
 
 import App from './containers/App'
-import configureStore from './store/configureStore';
+import configureStore from './store/configureStore'
+
+import './stylesheets/main.scss'
 
 const history = createBrowserHistory()
 const store = configureStore(history)
@@ -13,9 +15,9 @@ const store = configureStore(history)
 const render = () => {
     ReactDOM.render(
         <AppContainer>
-                <Provider store={store}>
-                    <App history={history}/>
-                </Provider>
+            <Provider store={store}>
+                <App history={history}/>
+            </Provider>
         </AppContainer>,
         document.getElementById('root')
     )

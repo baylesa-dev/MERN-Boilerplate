@@ -1,0 +1,113 @@
+.background-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+    background-color: map-get($bg-color, primary)
+}
+
+.card-container-shadow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($bg-color, tertiary);
+    width: 66vw;
+    max-width: 730px;
+    height: 85%;
+    border-radius: 8px
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($bg-color, light-blue);
+    width: 96%;
+    height: 97%;
+    border-radius: 7px
+}
+
+.login-provider-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.login-button {
+    width: 80%;
+}
+
+.login-text {
+    font-family: $raleway;
+    font-weight: 600;
+}
+
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.login-container {
+    display: flex;
+    padding: 15px;
+    padding-left: 20px;
+    border-radius: 3px;
+    box-shadow: "rgba(0, 0, 0, 0.5) 0 1px 2px";
+    cursor: "pointer";
+    margin: 5px;
+    background-color: map-get($bg-color, yellow);
+    justify-content: space-between;
+    align-items: center;
+    width: 70%
+}
+
+input {
+    width: 66%;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 1.2em
+}
+
+input:focus {
+    outline-width: 0
+}
+
+::placeholder {
+    color: white
+}
+
+.login-submit {
+    display: flex;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: "rgba(0, 0, 0, 0.5) 0 1px 2px";
+    color: white;
+    cursor: pointer;
+    font-family: $raleway;
+    font-weight: 600;
+    font-size: "19px";
+    margin: 5px;
+    background-color: map-get($bg-color, yellow);
+    justify-content: center;
+    align-items: center;
+    width: 20%
+}
+
+.description-title {
+    color: white;
+    font-family: $raleway;
+    font-weight: 800
+}
