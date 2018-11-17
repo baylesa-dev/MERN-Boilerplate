@@ -20,32 +20,61 @@
 <p align="center">
   <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a> •
+  <a href="#how-to-use">How to use</a>
   <a href="#technologies">Technologies</a> •
   <a href="#sources-and-related">Sources and Related</a>
 </p>
 
 ## Installation
-* ### Prerequisites
+### Prerequisites
 
-    **Install *docker* and *docker-compose***
+**Install *docker* and *docker-compose***
 
-    Due to the large number of available platforms I would refer you to the clear, clean and well explained Docker website.
+Due to the large number of available platforms I would refer you to theclear, clean and well explained Docker website.
 
-    :point_down: Follow the links above :point_down:
+:point_down: Follow the links above :point_down:
 
-    |[<img src="https://www.docker.com/sites/default/files/mono-vertical.png" height="100">](https://docs.docker.com/install/) | [**Install Docker**](https://docs.docker.com/install/)|
-    -----------------------------------|-------------------------------------------------------
+|[<img src="https://www.docker.com/sites/default/files/mono-vertical.png" height="100">](https://docs.docker.com/install/) | [**Install Docker**](https://docs.docker.com/install/)|
+-----------------------------------|-------------------------------------------------------
 
 ## Usage
-* ### Build Docker's containers
-    ```bash
-    $ docker-compose build
-    ```
-* ### Launch Docker's containers
-    ```bash
-    $ docker-compose up
-    ```
-And that's it, you can code :thumbsup: :tada:
+##### Build Docker's containers with
+```bash
+$ docker-compose build
+```
+##### Launch Docker's containers with
+```bash
+$ docker-compose up
+```
+##### Open your favorite browser on
+```bash
+http://0.0.0.0:3000
+```
+###### And that's it, you can code :thumbsup: :tada:
+###### This is what you should see :point_down:
+<img width=50% src="docs/images/screenshot-login-mern.png">
+
+
+## How to use
+
+### Architecture
+    .
+    ├── client                   # Client sources
+    │   ├── config               # Webpack configuration files
+    │   ├── src                  # Sources files
+    │   │   ├── action           #
+    │   │   ├── reducers         # Redux configuration files
+    │   │   ├── store            #
+    │   │   ├── components       # React components
+    │   │   ├── containers       # React containers
+    │   │   └── stylesheets      # SASS Styles files
+    │   ├── .babelrc             # Babel configation file
+    │   └── Dockerfile           # Client Dockerfile
+    ├── sever                    # Back-end sources
+    └── docker-compose.yml       # Docker Compose (client, backend, mongodb)
+### Client
+
+### Server
 
 ## Technologies
 
