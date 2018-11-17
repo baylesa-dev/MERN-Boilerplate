@@ -27,13 +27,22 @@ module.exports = env => {
                         }
                     },
                     {
+                        test: /\.html$/,
+                        use: [
+                            {
+                                loader: "html-loader",
+                                options: { minimize: true }
+                            }
+                        ]
+                    },
+                    {
                         test: /\.scss$/,
                         use: [
                             PLATFORM === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
                             'css-loader',
                             'sass-loader'
                         ]
-                    },
+                    }
                 ]
             },
             plugins: [
