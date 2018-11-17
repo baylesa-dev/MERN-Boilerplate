@@ -35,24 +35,24 @@ class Login extends Component {
             <div className="background-container">
                     <div className="card-container-shadow">
                         <div className="card-container">
-                            <div className="description-title">
+                            <div className="description-title" style={{marginTop: '10px'}}>
                                 LOGIN WITH YOUR FAVORITE SOCIAL NETWORKS
                             </div>
                             <div className="login-provider-container">
                                 <FacebookLoginButton align="center" className="login-button" onClick={() => alert("Hello")}>
-                                    <span className="login-text">Login with Facebook</span>
+                                    <span className="login-text">Facebook</span>
                                 </FacebookLoginButton>
                                 <GoogleLoginButton align="center" className="login-button" onClick={() => alert("Hello")}>
-                                    <span className="login-text">Login with Google</span>
+                                    <span className="login-text">Google</span>
                                 </GoogleLoginButton>
                                 <TwitterLoginButton align="center" className="login-button" onClick={() => alert("Hello")}>
-                                    <span className="login-text">Login with Twitter</span>
+                                    <span className="login-text">Twitter</span>
                                 </TwitterLoginButton>
                                 <InstagramLoginButton align="center" className="login-button" onClick={() => alert("Hello")}>
-                                    <span className="login-text">Login with Instagram</span>
+                                    <span className="login-text">Instagram</span>
                                 </InstagramLoginButton>
                                 <GithubLoginButton align="center" className="login-button" onClick={() => alert("Hello")} >
-                                    <span className="login-text">Login with Github</span>
+                                    <span className="login-text">Github</span>
                                 </GithubLoginButton>
                             </div>
                             <div className="description-title">

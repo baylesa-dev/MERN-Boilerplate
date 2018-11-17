@@ -3,8 +3,9 @@
     flex: 1;
     justify-content: center;
     align-items: center;
-    height: 93vh;
-    background-color: map-get($bg-color, primary)
+    height: 100vh;
+    background-color: map-get($bg-color, primary);
+    padding: 15px;
 }
 
 .card-container-shadow {
@@ -12,10 +13,8 @@
     justify-content: center;
     align-items: center;
     background-color: map-get($bg-color, tertiary);
-    width: 66vw;
-    max-width: 730px;
-    height: 85%;
-    border-radius: 8px
+    border-radius: 8px;
+    margin: 15px;
 }
 
 .card-container {
@@ -24,9 +23,9 @@
     justify-content: center;
     align-items: center;
     background-color: map-get($bg-color, light-blue);
-    width: 96%;
-    height: 97%;
-    border-radius: 7px
+    border-radius: 7px;
+    margin: 7px;
+    padding: 10px
 }
 
 .login-provider-container {
@@ -109,5 +108,7 @@ input:focus {
 .description-title {
     color: white;
     font-family: $raleway;
-    font-weight: 800
+    font-weight: 800;
+    text-align: center;
+    font-size: 2vh
 }

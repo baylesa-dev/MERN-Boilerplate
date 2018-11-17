@@ -14,6 +14,7 @@
 
 .brand-container {
     font-family: $raleway;
+    cursor: pointer;
     color: map-get($font-color, secondary)
 }
 
@@ -26,5 +27,6 @@
 }
 
 .icon {
-    color: map-get($font-color, secondary)
+    color: map-get($font-color, secondary);
+    cursor: pointer;
 }
