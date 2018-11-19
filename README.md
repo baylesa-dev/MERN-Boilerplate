@@ -56,6 +56,9 @@ __If you don't want to use HTTPS__
     ```javascript
     //const server = http.createServer(app)
     const server = https.createServer(certOptions, app)
+    const certOptions = {
+        ...
+    }
 
     //const API_URL = "http://localhost:8080"
     const API_URL = "https://localhost:8080"
