@@ -21,7 +21,7 @@
   <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a> •
   <a href="#social-media-login">Social Media Login</a> •
-  <a href="#how-to-use">How to use</a>
+  <a href="#how-to-use">How to use</a> •
   <a href="#technologies">Technologies</a> •
   <a href="#sources-and-related">Sources and Related</a>
 </p>
