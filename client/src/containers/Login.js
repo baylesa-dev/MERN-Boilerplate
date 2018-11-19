@@ -10,6 +10,7 @@ import { TwitterLoginButton } from "react-social-login-buttons"
 import { GoogleLoginButton } from "react-social-login-buttons"
 import { InstagramLoginButton } from "react-social-login-buttons"
 
+//const API_URL = "http://localhost:8080"
 const API_URL = "https://localhost:8080"
 const socket = io(API_URL)
 

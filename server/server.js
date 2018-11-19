@@ -64,6 +64,7 @@ const certOptions = {
     ca: fs.readFileSync(path.resolve('./certs/server.csr'))
 }
 
+//const server = http.createServer(app)
 const server = https.createServer(certOptions, app)
 
 /*
