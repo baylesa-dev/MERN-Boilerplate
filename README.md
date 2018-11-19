@@ -38,6 +38,39 @@ Due to the large number of available platforms I would refer you to theclear, cl
 -----------------------------------|-------------------------------------------------------
 
 ## Usage
+##### Generate SSL Certificate
+To run this project with **HTTPS**, and use Facebook Login feature, you have to generate certificates.
+You can follow this tutorial, created by **Daksh Shah** :
+
+|<img src="https://cdn-images-1.medium.com/max/1200/1*MotlWcSa2n6FrOx3ul89kw.png" height="50"> | [www.medium.freecodecamp.org/how-to-get-https-working-on-your-local-development-env...](https://medium.freecodecamp.org/how-to-get-https-working-on-your-local-development-environment-in-5-minutes-7af615770eec) |
+----------------------------------------------------|-----------------------------------------
+
+```bash
+$ mkdir -p MERN-Boilerplate/server/certs
+```
+And place your server.key, server.crt and server.csr under server/certs/
+
+__If you don't want to use HTTPS__
+
+* in _server/server.js_ and _client/containers/Login.js_ comment/uncomment
+    ```javascript
+    //const server = http.createServer(app)
+    const server = https.createServer(certOptions, app)
+
+    //const API_URL = "http://localhost:8080"
+    const API_URL = "https://localhost:8080"
+    ```
+* in _client/config/webpack.base.config.js_ remove
+    ```json
+    devServer: {
+        https: true,
+        [...]
+    }
+    ```
+##### Want to use social media login ?
+
+Refer to the <a href="#social-media-login">Social Media Login</a> chapter :v: :point_down:
+
 ##### Build Docker's containers with
 ```bash
 $ docker-compose build
@@ -48,12 +81,29 @@ $ docker-compose up
 ```
 ##### Open your favorite browser on
 ```bash
-http://0.0.0.0:3000
+https://localhost:3000
 ```
 ###### And that's it, you can code :thumbsup: :tada:
 ###### This is what you should see :point_down:
 <img width=50% src="docs/images/screenshot-login-mern.png">
 
+## Social Media Login
+
+To use social media login, you have to follow few steps :
+
+* Submit to a developper account on the following websites :
+
+    * [www.developers.facebook.com](https://developers.facebook.com/)
+    * [www.developer.twitter.com/](https://developer.twitter.com/)
+    * [www.console.developers.google.com/](https://console.developers.google.com/)
+    * [www.instagram.com/developer/](https://www.instagram.com/developer/)
+    * [www.github.com/settings/developers](https://github.com/settings/developers)
+
+* Get __CLIENT_ID__ and __CLIENT_SECRET__ and place them in a _server/.env_ file as
+    ```javascript
+    GOOGLE_KEY=''
+    GOOGLE_SECRET=''
+    ```
 
 ## How to use
 
