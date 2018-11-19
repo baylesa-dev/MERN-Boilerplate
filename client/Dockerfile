@@ -10,4 +10,6 @@ RUN npm install --silent
 
 COPY . /src/app/client
 
+EXPOSE 3000
+
 CMD [ "npm", "start" ]

@@ -9,4 +9,6 @@ RUN npm install --silent
 
 COPY . /src/app/server
 
+EXPOSE 8080
+
 CMD [ "npm", "run", "dev" ]
