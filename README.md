@@ -52,7 +52,7 @@ And place your server.key, server.crt and server.csr under server/certs/
 
 __If you don't want to use HTTPS__
 
-* in _server/server.js_ and _client/containers/Login.js_ comment/uncomment
+* in _server/server.js_ and _client/src/containers/Login.js_ comment/uncomment
     ```javascript
     //const server = http.createServer(app)
     const server = https.createServer(certOptions, app)
