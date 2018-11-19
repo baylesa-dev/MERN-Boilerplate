@@ -59,11 +59,9 @@ module.exports = env => {
                 }),
             ],
             devServer: {
+                https: true,
                 contentBase: sourcePath,
-                hot: true,
-                proxy: {
-                  '/api': 'http://server:8080'
-                }
+                hot: true
             },
             watchOptions: {
                 aggregateTimeout: 300,
